@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/beijixing">
+    <TextView
+        android:id="@+id/liao"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="#71a1ed"
+        android:text="微信测试版"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        />
+    <include
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_send"
+
+        android:layout_marginBottom="25dp"
+        />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_above="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        tools:text="群聊界面"
+        android:textColor="#3f55ff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/history"
+        android:layout_marginTop="-7dp"
+        android:layout_below="@id/liao">
+        <ListView
+            android:id="@+id/list_view_demo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>
